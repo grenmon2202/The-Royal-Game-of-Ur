@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading;
 
 public class CoinFlip : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class CoinFlip : MonoBehaviour
 
     public int[] coinVal;
     public int totMove;
+    public Sprite[] coins; 
+    private int changeTime = 5, sign = 1, animStart = 1;
 
     public void flipCoins(){
         //In a traditional game of The Royal Game of Ur, three pyramid shaped dice are thrown, giving
@@ -29,6 +32,17 @@ public class CoinFlip : MonoBehaviour
         totMove=0;
         for (int i = 0; i<coinVal.Length; i++){
             coinVal[i]=Random.Range(0,2);
+
+            // changeTime=5;
+            // while(changeTime<1000){
+            //     animStart=animStart+sign;
+            //     this.transform.GetChild(i).GetComponent<Image>().sprite=coins[animStart];
+            //     sign*=-1;
+            //     //Thread.Sleep(changeTime);
+            //     changeTime*=2;
+            // }
+
+            this.transform.GetChild(i).GetComponent<Image>().sprite=coins[coinVal[i]+1];
             totMove+=coinVal[i];
         }
         
