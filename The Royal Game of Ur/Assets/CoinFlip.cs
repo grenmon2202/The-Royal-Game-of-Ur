@@ -19,17 +19,20 @@ public class CoinFlip : MonoBehaviour
     }
 
     public int[] coinVal;
-    public int totMove;
+    
     public Sprite[] coins; 
-    private int changeTime = 5, sign = 1, animStart = 1;
+    
+    public manager cf;
 
     public void flipCoins(){
+
+        if(cf.flipped)
+        return;
         //In a traditional game of The Royal Game of Ur, three pyramid shaped dice are thrown, giving
         //a binary result of 0 or 1 each, thus allowing a player to move upto 3 spaces at a time.
         //The same result can be acquired by flipping three coins and allowing the user to move one
         //space for every Heads rolled.
-        
-        totMove=0;
+        cf.totMove=0;
         for (int i = 0; i<coinVal.Length; i++){
             coinVal[i]=Random.Range(0,2);
 
@@ -43,13 +46,20 @@ public class CoinFlip : MonoBehaviour
             // }
 
             this.transform.GetChild(i).GetComponent<Image>().sprite=coins[coinVal[i]+1];
-            totMove+=coinVal[i];
+            cf.totMove+=coinVal[i];
+            Debug.Log(i + " "+ coinVal[i]);
+        }
+
+        cf.flipped = true;
+        if(cf.totMove==0){
+            cf.animated=true;
+            cf.clicked=true;
         }
         
-        Debug.Log("Flip Results: ");
+        //Debug.Log("Flip Results: ");
 
-        for(int i = 0; i<coinVal.Length;i++)
-        Debug.Log(i+": "+coinVal[i]);
-        Debug.Log("Total :"+totMove);
+        // for(int i = 0; i<coinVal.Length;i++)
+        // Debug.Log(i+": "+coinVal[i]);
+        // Debug.Log("Total :"+totMove);
     }
 }

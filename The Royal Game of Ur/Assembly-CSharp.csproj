@@ -46,6 +46,10 @@
   </PropertyGroup>
   <ItemGroup>     <Compile Include="Assets\CoinFlip.cs" />
      <Compile Include="Assets\DisplayTotalMove.cs" />
+     <Compile Include="Assets\manager.cs" />
+     <Compile Include="Assets\PlayingPiece.cs" />
+     <Compile Include="Assets\Raising.cs" />
+     <Compile Include="Assets\TileScript.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/The Royal Game of Ur/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
