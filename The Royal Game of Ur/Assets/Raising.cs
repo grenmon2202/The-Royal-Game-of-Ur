@@ -16,6 +16,8 @@ public class Raising : MonoBehaviour
     public Material[] scored1;
     public Material[] scored2;
 
+    public manager cf;
+
     // Update is called once per frame
     void Update()
     {
@@ -23,10 +25,11 @@ public class Raising : MonoBehaviour
             str=this.name;
             if(str[6]=='1'){
                 GetComponentInChildren<Renderer>().materials = scored1;
-                
+                cf.score1++;
             }
             else{
                 GetComponentInChildren<Renderer>().materials = scored2;
+                cf.score2++;
             }
             raise=false;
         }

@@ -45,6 +45,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>     <Compile Include="Assets\CoinFlip.cs" />
+     <Compile Include="Assets\ColorChanger.cs" />
      <Compile Include="Assets\DisplayTotalMove.cs" />
      <Compile Include="Assets\manager.cs" />
      <Compile Include="Assets\PlayingPiece.cs" />

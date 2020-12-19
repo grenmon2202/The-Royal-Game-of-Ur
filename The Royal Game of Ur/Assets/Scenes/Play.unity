@@ -309,6 +309,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82702cc547c52e3429d3aa162b78dec6, type: 2}
   scored2:
   - {fileID: 2100000, guid: 030ce2afa53b11542aeab04e5f6f3a6b, type: 2}
+  cf: {fileID: 1029279038}
 --- !u!4 &33181900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6884662153439531130, guid: 6c87519da01ec004ca38161d837e1dbf,
@@ -878,6 +879,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82702cc547c52e3429d3aa162b78dec6, type: 2}
   scored2:
   - {fileID: 2100000, guid: 030ce2afa53b11542aeab04e5f6f3a6b, type: 2}
+  cf: {fileID: 1029279038}
 --- !u!4 &239755516 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6884662153439531130, guid: 6c87519da01ec004ca38161d837e1dbf,
@@ -1074,6 +1076,11 @@ PrefabInstance:
       propertyPath: nextTiles.Array.data[0]
       value: 
       objectReference: {fileID: 736271416}
+    - target: {fileID: 1479286093223397793, guid: 8be5f1756803ce8438cb2fd31b529371,
+        type: 3}
+      propertyPath: isRestTile
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8be5f1756803ce8438cb2fd31b529371, type: 3}
 --- !u!4 &328812981 stripped
@@ -1117,6 +1124,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82702cc547c52e3429d3aa162b78dec6, type: 2}
   scored2:
   - {fileID: 2100000, guid: 030ce2afa53b11542aeab04e5f6f3a6b, type: 2}
+  cf: {fileID: 1029279038}
 --- !u!4 &474172361 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6884662153439531130, guid: 6c87519da01ec004ca38161d837e1dbf,
@@ -1152,6 +1160,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82702cc547c52e3429d3aa162b78dec6, type: 2}
   scored2:
   - {fileID: 2100000, guid: 030ce2afa53b11542aeab04e5f6f3a6b, type: 2}
+  cf: {fileID: 1029279038}
 --- !u!1001 &508737229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1427,6 +1436,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82702cc547c52e3429d3aa162b78dec6, type: 2}
   scored2:
   - {fileID: 2100000, guid: 030ce2afa53b11542aeab04e5f6f3a6b, type: 2}
+  cf: {fileID: 1029279038}
 --- !u!4 &670764202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6884662153439531130, guid: 6c87519da01ec004ca38161d837e1dbf,
@@ -1943,6 +1953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4219cf873e49be64bb6e8fea7931248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 0
+  finalTile: {fileID: 1521575541}
   cf: {fileID: 1029279038}
   startTile: {fileID: 919519513}
   Score1: {fileID: 1231235936}
@@ -2086,6 +2098,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82702cc547c52e3429d3aa162b78dec6, type: 2}
   scored2:
   - {fileID: 2100000, guid: 030ce2afa53b11542aeab04e5f6f3a6b, type: 2}
+  cf: {fileID: 1029279038}
 --- !u!4 &844676878 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6884662153439531130, guid: 6c87519da01ec004ca38161d837e1dbf,
@@ -2143,11 +2156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cf: {fileID: 1029279038}
-  coins:
-  - {fileID: 2027555902}
-  - {fileID: 1344190930}
-  - {fileID: 116045680}
-  coinsSprite: {fileID: 21300000, guid: 3d3bba490a7dd0e46bfefdbaa1c0108d, type: 3}
 --- !u!114 &847429115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2492,6 +2500,7 @@ GameObject:
   - component: {fileID: 964261922}
   - component: {fileID: 964261921}
   - component: {fileID: 964261924}
+  - component: {fileID: 964261925}
   m_Layer: 5
   m_Name: Coins
   m_TagString: Untagged
@@ -2600,6 +2609,21 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &964261925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964261919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78cf78e0d1fa55419d7e1c1b93bb600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cf: {fileID: 1029279038}
+  gold: {fileID: 21300000, guid: 411c4e39fef353d40807e63d56131df3, type: 3}
+  brown: {fileID: 21300000, guid: f8e2fc48aac4430459316a21063df419, type: 3}
 --- !u!1001 &969195527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2862,6 +2886,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4219cf873e49be64bb6e8fea7931248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 1
+  finalTile: {fileID: 154632768}
   cf: {fileID: 1029279038}
   startTile: {fileID: 899574884}
   Score1: {fileID: 844676877}
@@ -2915,6 +2941,8 @@ MonoBehaviour:
   clicked: 0
   animated: 0
   totMove: 0
+  score1: 0
+  score2: 0
 --- !u!4 &1029279039
 Transform:
   m_ObjectHideFlags: 0
@@ -3215,6 +3243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4219cf873e49be64bb6e8fea7931248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 1
+  finalTile: {fileID: 154632768}
   cf: {fileID: 1029279038}
   startTile: {fileID: 899574884}
   Score1: {fileID: 1167498504}
@@ -3258,6 +3288,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4219cf873e49be64bb6e8fea7931248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 1
+  finalTile: {fileID: 154632768}
   cf: {fileID: 1029279038}
   startTile: {fileID: 899574884}
   Score1: {fileID: 474172360}
@@ -3300,6 +3332,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82702cc547c52e3429d3aa162b78dec6, type: 2}
   scored2:
   - {fileID: 2100000, guid: 030ce2afa53b11542aeab04e5f6f3a6b, type: 2}
+  cf: {fileID: 1029279038}
 --- !u!4 &1167498505 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6884662153439531130, guid: 6c87519da01ec004ca38161d837e1dbf,
@@ -3383,6 +3416,16 @@ PrefabInstance:
       propertyPath: nextTiles.Array.data[0]
       value: 
       objectReference: {fileID: 328812982}
+    - target: {fileID: 1479286093223397793, guid: 8be5f1756803ce8438cb2fd31b529371,
+        type: 3}
+      propertyPath: isRestTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046872362572830567, guid: 8be5f1756803ce8438cb2fd31b529371,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb08c48b4e2a00f48bd40f6421255226, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8be5f1756803ce8438cb2fd31b529371, type: 3}
 --- !u!4 &1213629129 stripped
@@ -3585,6 +3628,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82702cc547c52e3429d3aa162b78dec6, type: 2}
   scored2:
   - {fileID: 2100000, guid: 030ce2afa53b11542aeab04e5f6f3a6b, type: 2}
+  cf: {fileID: 1029279038}
 --- !u!1001 &1239894957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3840,6 +3884,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4219cf873e49be64bb6e8fea7931248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 0
+  finalTile: {fileID: 1521575541}
   cf: {fileID: 1029279038}
   startTile: {fileID: 919519513}
   Score1: {fileID: 1678942042}
@@ -4211,6 +4257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4219cf873e49be64bb6e8fea7931248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 0
+  finalTile: {fileID: 1521575541}
   cf: {fileID: 1029279038}
   startTile: {fileID: 919519513}
   Score1: {fileID: 1549719256}
@@ -4363,6 +4411,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4219cf873e49be64bb6e8fea7931248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 0
+  finalTile: {fileID: 1521575541}
   cf: {fileID: 1029279038}
   startTile: {fileID: 919519513}
   Score1: {fileID: 502005013}
@@ -4582,6 +4632,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82702cc547c52e3429d3aa162b78dec6, type: 2}
   scored2:
   - {fileID: 2100000, guid: 030ce2afa53b11542aeab04e5f6f3a6b, type: 2}
+  cf: {fileID: 1029279038}
 --- !u!1 &1614149036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4713109493306485433, guid: 6cf95e2700c66534a94fa4aea24b593f,
@@ -4734,6 +4785,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82702cc547c52e3429d3aa162b78dec6, type: 2}
   scored2:
   - {fileID: 2100000, guid: 030ce2afa53b11542aeab04e5f6f3a6b, type: 2}
+  cf: {fileID: 1029279038}
 --- !u!1001 &1743306139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4937,6 +4989,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4219cf873e49be64bb6e8fea7931248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 0
+  finalTile: {fileID: 1521575541}
   cf: {fileID: 1029279038}
   startTile: {fileID: 919519513}
   Score1: {fileID: 1937859123}
@@ -4964,6 +5018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4219cf873e49be64bb6e8fea7931248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 1
+  finalTile: {fileID: 154632768}
   cf: {fileID: 1029279038}
   startTile: {fileID: 899574884}
   Score1: {fileID: 670764201}
@@ -5012,6 +5068,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82702cc547c52e3429d3aa162b78dec6, type: 2}
   scored2:
   - {fileID: 2100000, guid: 030ce2afa53b11542aeab04e5f6f3a6b, type: 2}
+  cf: {fileID: 1029279038}
 --- !u!1 &1824483568 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9086820550389350622, guid: b591f9f77f1602141a270d5bec44f3b9,
@@ -5333,6 +5390,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 82702cc547c52e3429d3aa162b78dec6, type: 2}
   scored2:
   - {fileID: 2100000, guid: 030ce2afa53b11542aeab04e5f6f3a6b, type: 2}
+  cf: {fileID: 1029279038}
 --- !u!1 &1942486808 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5214126111786130034, guid: b591f9f77f1602141a270d5bec44f3b9,
@@ -5351,6 +5409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4219cf873e49be64bb6e8fea7931248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 1
+  finalTile: {fileID: 154632768}
   cf: {fileID: 1029279038}
   startTile: {fileID: 899574884}
   Score1: {fileID: 239755515}
@@ -5394,6 +5454,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4219cf873e49be64bb6e8fea7931248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 1
+  finalTile: {fileID: 154632768}
   cf: {fileID: 1029279038}
   startTile: {fileID: 899574884}
   Score1: {fileID: 33181899}
@@ -5888,6 +5950,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4219cf873e49be64bb6e8fea7931248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 0
+  finalTile: {fileID: 1521575541}
   cf: {fileID: 1029279038}
   startTile: {fileID: 919519513}
   Score1: {fileID: 1796578905}
