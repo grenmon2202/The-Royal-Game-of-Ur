@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{802521D8-1FCA-8F3D-608B-EFE330DB90E1}</ProjectGuid>
+    <ProjectGuid>{9A11237F-ED63-616E-DBDE-C39399B84FC5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -54,31 +54,31 @@
      <Compile Include="Assets\Scripts\StartGame.cs" />
      <Compile Include="Assets\Scripts\TileScript.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/The Royal Game of Ur/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/Source/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/The Royal Game of Ur/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/Source/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/The Royal Game of Ur/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/Source/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/The Royal Game of Ur/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/Source/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/The Royal Game of Ur/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/Source/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/The Royal Game of Ur/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/Source/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/The Royal Game of Ur/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/Source/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/The Royal Game of Ur/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/Source/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/The Royal Game of Ur/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/HARSH MEENA/The-Royal-Game-of-Ur/Source/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
